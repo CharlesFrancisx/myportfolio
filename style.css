@@ -226,7 +226,7 @@ nav .nav-btn a:hover {
 }
 
 .main2 .contact-txt .icon-btn .fa-brands:hover {
-    color: white;
+    color: var(--light-grey);
 }
 
 .main2 .contact-txt .txt {
