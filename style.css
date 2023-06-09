@@ -1,0 +1,560 @@
+/*Bai Jamjuree*/
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --default-font: 'Bai Jamjuree';
+    --navbar-font: 'asul';
+    --blue-light: #48C5FF;
+    --light-grey: #464646;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--default-font);
+    scroll-behavior: smooth;
+
+}
+
+/*
+   START - NAV BAR
+*/
+
+nav {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10000000;
+}
+
+.main nav .logo {
+    margin-left: 2rem;
+}
+
+.main nav a img {
+    width: 130px;
+    height: 70px;
+}
+
+nav .nav-btn {
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+nav .nav-btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 1s;
+}
+
+nav .nav-btn a:hover {
+    color: var(--blue-light);
+}
+
+
+/*
+   END - NAV BAR
+*/
+
+
+/*
+   START - BODY
+*/
+
+.main .body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body .body-txt {
+    margin: 0 auto;
+}
+
+.body .body-txt h1 {
+    font-size: 80px;
+}
+
+.body .body-txt h1 span {
+    color: #48C5FF;
+}
+
+.body .body-txt p {
+    font-size: 20px;
+    color: var(--light-grey);
+}
+
+.main .body .body-img {
+    width: 40%;
+    height: 100vh;
+}
+
+/*
+   END - BODY
+*/
+
+
+/*
+   START - MAIN1
+*/
+
+.main1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 5rem;
+}
+
+.main1 .projects {
+    display: flex;
+    gap: 4rem;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.main1 .projects p {
+    position: absolute;
+    color: var(--blue-light);
+    transform: rotate(90deg);
+    font-size: 50px;
+    top: 90px;
+    left: -230px;
+}
+
+
+.main1 .projects .website1 {
+    width: 400px;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main1 .projects .website1 img {
+    width: 380px;
+    height: 230px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+.main1 .projects .website1 img:hover {
+    transform: scale(1.2);
+}
+
+.main1 .projects .website2 {
+    width: 400px;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main1 .projects .website2 img {
+    width: 380px;
+    height: 230px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.main1 .projects .website2 img:hover {
+    transform: scale(1.2);
+}
+
+
+/*
+   END - MAIN1
+*/
+
+
+/*
+   START - MAIN2
+*/
+
+.main2 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.main2 img {
+    width: 40%;
+    height: 100vh;
+}
+
+.main2 .contact-txt {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    max-width: 400px;
+}
+
+.main2 .contact-txt .icon-btn {
+    position: absolute;
+    bottom: -60px;
+    right: 110px;
+    display: flex;
+    gap: 1rem;
+}
+
+.main2 .contact-txt .icon-btn .fa-brands {
+    font-size: 40px;
+    color: var(--blue-light);
+    transition: 1s;
+}
+
+.main2 .contact-txt .icon-btn .fa-brands:hover {
+    color: black;
+}
+
+.main2 .contact-txt .txt {
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    word-wrap: wrap;
+}
+
+.main2 .contact-txt h1 {
+    font-size: 50px;
+}
+
+
+/*
+   END - MAIN2
+*/
+
+/*
+    START - MAIN3
+*/
+
+.main3 .about-content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.main3 .about-content p {
+    font-weight: 500;
+    font-size: 25px;
+    text-align: justify;
+    max-width: 800px;
+    word-wrap: break-word;
+}
+
+.main3 .about-content h1 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+/*
+    END - MAIN3
+*/
+
+
+/*
+    START - FOOTER
+*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h3 {
+    color: white;
+    
+}
+
+
+/*
+    END - FOOTER
+*/
+
+
+
+@media (max-width: 880px) {
+
+    .body .body-txt h1 {
+        font-size: 50px;
+    }
+
+    .main .body .body-img {
+        
+    }
+    .main1 .projects .website1 {
+        width: 280px;
+    }
+
+    .main1 .projects .website1 img {
+        width: 280px;
+    }
+
+    .main1 .projects .website2 {
+        width: 280px;
+    }
+
+    .main1 .projects .website2 img {
+        width: 280px;
+    }
+
+    .main1 .projects p {
+        left: -170px;
+    }
+
+    .main2 .contact-txt .txt {
+        font-size: 20px;
+        
+        
+    }
+
+    .main2 .contact-txt h1 {
+        font-size: 40px;
+    }
+
+    .main3 .about-content p {
+        font-size: 20px;
+    }
+
+    .main3 .about-content h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .body .body-txt h1 {
+        font-size: 50px;
+    }
+
+    .body .body-txt p {
+        font-size: 20px;
+    }
+
+    .main1 .projects .website1 {
+        width: 230px;
+    }
+
+    .main1 .projects .website1 img {
+        width: 230px;
+    }
+
+    .main1 .projects .website2 {
+        width: 230px;
+    }
+
+    .main1 .projects .website2 img {
+        width: 230px;
+    }
+
+    .main1 .projects p {
+        font-size: 40px;
+        top: 100px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .main1 .projects p {
+        left: -120px
+    }
+}
+
+@media (max-width: 650px) {
+    .main1 .projects .website1 {
+        width: 200px;
+    }
+
+    .main2 {
+        height: 50vh;
+    }
+
+    .main2 img {
+        display: none;
+    }
+
+    .main2 .contact-txt {
+        margin: 0 auto;
+        position: relative;
+        top: -40px;
+        right: -180px;
+        max-width: 300px;
+
+    }
+
+    .main .body .body-img {
+        display: none;
+    }
+
+    .main1 .projects .website1 img {
+        width: 200px;
+    }
+
+    .main1 .projects .website2 {
+        width: 200px;
+    }
+
+    .main1 .projects .website2 img {
+        width: 200px;
+    }
+
+    .main3 .about-content .txt {
+        font-size: 30px;
+    }
+
+    .main3 .about-content p {
+        font-size: 15px;
+        width: 400px;
+    }
+
+    .main2 .contact-txt h1 {
+        font-size: 30px;
+    }
+
+    .main2 .contact-txt .txt {
+        font-size: 15px;
+    }
+
+    .main2 .contact-txt  {
+        margin: 1rem;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .main1 .projects .website1 {
+        width: 100%;
+        height: 150px;
+    }
+
+    .main1 .projects .website1 img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .main1 .projects .website2 {
+        width: 100%;
+        height: 150px;
+    }
+
+    .main1 .projects .website2 img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .main .body {
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .main .btn a {
+        display: none;
+    }
+
+    .main nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main .body {
+        width: 100%;
+    }
+
+    .main1 {
+        width: 100%;
+    }
+
+    .main1 .projects p {
+        top: -60px;
+        transform: rotate(0deg);
+        color: black;
+        font-weight: 500;
+        left: 140px;
+    }
+
+    .main1 .projects .txt {
+        display: none;
+    }
+
+    .main2 {
+        height: 300px;
+    }
+    
+    .main2 .contact-txt {
+        margin: 0;
+        max-width: 300px;
+        position: relative;
+        left: 100px;
+        top: -20px;
+    }
+
+    .main3 .about-content .txt  {
+        font-size: 30px;
+    }
+
+    
+}
+
+@media (max-width: 390px) {
+    .main .body {
+        height: 70vh;
+    }
+
+    .main1 .projects p {
+        left: 100px;
+    }
+
+    .main2 .contact-txt {
+        left: 40px;
+    }
+
+    .main3 {
+        height: 60vh;
+    }
+
+    .main3 .about-content p {
+        max-width: 300px;
+    }
+    
+}
+
+@media (max-width: 340px) {
+    .main2 .contact-txt {
+        left: 20px
+    }
+
+    .main1 .projects p {
+        left: 60px;
+    }
+}
+
