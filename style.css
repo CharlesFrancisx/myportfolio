@@ -126,7 +126,6 @@ nav .nav-btn a:hover {
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
-    position: relative;
 }
 
 .main-skills .title {
