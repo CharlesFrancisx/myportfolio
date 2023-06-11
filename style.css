@@ -69,6 +69,7 @@ nav .nav-btn a:hover {
    START - BODY
 */
 
+
 .main .body {
     width: 100%;
     height: 100vh;
@@ -120,12 +121,13 @@ nav .nav-btn a:hover {
 
 .main-skills {
     width: 100%;
-    height: 140vh;
+    height: 100%;
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
+    
 }
 
 .main-skills .title {
@@ -134,15 +136,17 @@ nav .nav-btn a:hover {
     max-width: 250px;
     font-weight: 600;
     padding-bottom: 1rem;
-    position: absolute;
-    top: -120px;
+    margin:  4rem 0 3rem 0;
+}
+
+.main-skills span {
+    margin: 2rem 0;
 }
 
 .main-skills .skill-txt {
     max-width: 700px;
     position: relative;
     margin: 0 auto;
-    top: 50px;
 }
 
 .main-skills .skill-txt .skill-title {
@@ -173,20 +177,22 @@ nav .nav-btn a:hover {
 
 .main1 {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    flex-wrap: wrap;
     padding-top: 5rem;
+    gap: 2rem;
 }
 
 .main1 .projects {
-    display: flex;
-    gap: 4rem;
+    /* display: flex;
     position: relative;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .main1 .projects p {
@@ -210,8 +216,9 @@ nav .nav-btn a:hover {
 }
 
 .main1 .projects .website1 img {
-    width: 380px;
-    height: 230px;
+    width: 100%;
+    max-width: 380px;
+    max-height: 230px;
     transition: 1s;
     cursor: pointer;
 }
@@ -232,8 +239,9 @@ nav .nav-btn a:hover {
 }
 
 .main1 .projects .website2 img {
-    width: 380px;
-    height: 230px;
+    width: 100%;
+    max-width: 380px;
+    max-height: 230px;
     transition: 1s;
     cursor: pointer;
 }
@@ -254,12 +262,13 @@ nav .nav-btn a:hover {
 
 .main2 {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin-top: 4rem;
     display: flex;
     align-items: center;
     background-color: black;
     color: white;
+    
 }
 
 .main2 img {
@@ -312,12 +321,18 @@ nav .nav-btn a:hover {
     START - MAIN3
 */
 
-.main3 .about-content {
+.main3{
     width: 100%;
-    height: 60vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.main3 .about-content {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -371,25 +386,11 @@ footer h3 {
         font-size: 50px;
     }
 
-    .main1 .projects .website1 {
-        width: 280px;
+    .main1 {
+        align-items: center;
+        justify-content: center;
     }
-
-    .main1 .projects .website1 img {
-        width: 280px;
-    }
-
-    .main1 .projects .website2 {
-        width: 280px;
-    }
-
-    .main1 .projects .website2 img {
-        width: 280px;
-    }
-
-    .main1 .projects p {
-        left: -170px;
-    }
+    
 
     .main2 .contact-txt .txt {
         font-size: 20px;
@@ -420,40 +421,9 @@ footer h3 {
         font-size: 20px;
     }
 
-    .main1 .projects .website1 {
-        width: 230px;
-    }
-
-    .main1 .projects .website1 img {
-        width: 230px;
-    }
-
-    .main1 .projects .website2 {
-        width: 230px;
-    }
-
-    .main1 .projects .website2 img {
-        width: 230px;
-    }
-
-    .main1 .projects p {
-        font-size: 40px;
-        top: 100px;
-    }
-
-}
-
-@media (max-width: 700px) {
-    .main1 .projects p {
-        left: -120px
-    }
 }
 
 @media (max-width: 650px) {
-    .main1 .projects .website1 {
-        width: 200px;
-    }
-
     .main2 {
         height: 50vh;
     }
@@ -475,25 +445,12 @@ footer h3 {
         display: none;
     }
 
-    .main1 .projects .website1 img {
-        width: 200px;
-    }
-
-    .main1 .projects .website2 {
-        width: 200px;
-    }
-
-    .main1 .projects .website2 img {
-        width: 200px;
-    }
-
     .main3 .about-content .txt {
         font-size: 30px;
     }
 
     .main3 .about-content p {
         font-size: 15px;
-        width: 400px;
     }
 
     .main2 .contact-txt h1 {
@@ -511,25 +468,6 @@ footer h3 {
 }
 
 @media (max-width: 500px) {
-    .main1 .projects .website1 {
-        width: 100%;
-        height: 150px;
-    }
-
-    .main1 .projects .website1 img {
-        width: 100%;
-        height: 150px;
-    }
-
-    .main1 .projects .website2 {
-        width: 100%;
-        height: 150px;
-    }
-
-    .main1 .projects .website2 img {
-        width: 100%;
-        height: 150px;
-    }
 
     .main .body {
         flex-direction: column;
@@ -547,10 +485,6 @@ footer h3 {
     }
 
     .main .body {
-        width: 100%;
-    }
-
-    .main1 {
         width: 100%;
     }
 
@@ -590,20 +524,12 @@ footer h3 {
         height: 70vh;
     }
 
-    .main1 .projects p {
-        left: 100px;
-    }
-
     .main2 .contact-txt {
         left: 40px;
     }
 
-    .main3 {
-        height: 60vh;
-    }
-
     .main3 .about-content p {
-        max-width: 300px;
+        /* max-width: 300px; */
     }
     
 }
@@ -611,10 +537,6 @@ footer h3 {
 @media (max-width: 340px) {
     .main2 .contact-txt {
         left: 20px
-    }
-
-    .main1 .projects p {
-        left: 60px;
     }
 }
 
