@@ -177,7 +177,7 @@ nav .nav-btn a:hover {
 
 .main1 {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -524,6 +524,24 @@ footer h3 {
         height: 70vh;
     }
 
+    /* .main1 .projects .website1 img {
+        width: 200px;
+    }
+
+    .main1 .projects .website2 img {
+        width: 200px;
+    }
+
+    .main1 .projects .website1 {
+        width: 200px;
+    }
+
+    .main1 .projects .website2 {
+        width: 200px;
+    } */
+
+
+
     .main2 .contact-txt {
         left: 40px;
     }
@@ -536,7 +554,7 @@ footer h3 {
 
 @media (max-width: 340px) {
     .main2 .contact-txt {
-        left: 20px
+        left: 20px;
     }
 }
 
